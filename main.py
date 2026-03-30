@@ -16,6 +16,10 @@ def worker(text):
 thread1 = threading.Thread(target=worker, daemon=True, args=("ABC",))
 thread2 = threading.Thread(target=worker, daemon=True, args=("XYZ",))
 
+# A program will automatically terminate when only daemon threads are left running.
+# In contrast, non-daemon (user) threads must finish before the program exits.
+# daemon only runs as a background of main threads
+
 thread1.start()
 thread2.start()
 
@@ -32,9 +36,7 @@ thread2.start()
 # Think of join() as:
 #       “Main thread, don’t continue until this thread is done.”
 
-# A program will automatically terminate when only daemon threads are left running.
-# In contrast, non-daemon (user) threads must finish before the program exits.
-# daemon only runs as a background of main threads
+
 
 input("Press enter to quit")
 done = True
