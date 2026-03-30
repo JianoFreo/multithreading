@@ -23,9 +23,9 @@ stop.
 ##  Code Explanation
 
 ### Shared Global Variable
-
+```
 done = False
-
+```
 Acts as a shared flag between threads. When set to True, threads stop
 execution.
 
@@ -56,9 +56,10 @@ Daemon threads run in the background and do not block program exit.
 ------------------------------------------------------------------------
 
 ### Starting Threads
-
-thread1.start() thread2.start()
-
+```
+thread1.start()
+thread2.start()
+```
 Begins concurrent execution of both threads.
 
 ------------------------------------------------------------------------
@@ -71,17 +72,19 @@ daemon threads remain, Python will terminate the program.
 ------------------------------------------------------------------------
 
 ### join() (Commented Out)
-
-thread1.join() thread2.join()
-
+```
+thread1.join()
+thread2.join()
+```
 join() makes the main thread wait until the thread finishes execution.
 
 ------------------------------------------------------------------------
 
 ### User Input to Stop Threads
-
-input("Press enter to quit") done = True
-
+```
+input("Press enter to quit")
+done = True
+```
 The program waits for user input. When Enter is pressed, the shared flag
 is set to True, stopping both threads.
 
@@ -111,7 +114,7 @@ threads. This example does not use locks or synchronization mechanisms.
 
 ------------------------------------------------------------------------
 
-## ▶ How to Run
+## =================== How to Run =============================
 
 python your_script.py
 
@@ -130,7 +133,7 @@ stop and program exits
 
 ------------------------------------------------------------------------
 
-## Reviewer Section
+## ===================== Reviewer Section ==========================
 
 ### Strengths
 
