@@ -12,8 +12,11 @@ def worker():
         print(counter)
         # if counter == 10:
         #     done = True
-worker()
+        
+threading.Thread(target=worker).start()
 
 input("Press enter to quit")
 done = True
+
+
 
