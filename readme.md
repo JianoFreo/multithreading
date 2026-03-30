@@ -114,7 +114,7 @@ threads. This example does not use locks or synchronization mechanisms.
 
 ------------------------------------------------------------------------
 
-## =================== How to Run =============================
+## ========== How to Run ============
 
 python your_script.py
 
@@ -133,7 +133,7 @@ stop and program exits
 
 ------------------------------------------------------------------------
 
-## ===================== Reviewer Section ==========================
+## ========== Reviewer Section ============
 
 ### Strengths
 
