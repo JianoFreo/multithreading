@@ -133,7 +133,7 @@ stop and program exits
 
 ------------------------------------------------------------------------
 
-## ========== Reviewer Section ============
+## ====== Reviewer Section =====
 
 ### Strengths
 
